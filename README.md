@@ -1,6 +1,6 @@
 # Vibe-to-Production Audit & Hardening Kit
 
-[![CI](https://img.shields.io/badge/CI-unittest-10b981?style=flat-square)](.github/workflows/ci.yml)
+[![Vibe Audit CI](https://github.com/agenciaiaonline-wq/vibe-to-production-audit-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/agenciaiaonline-wq/vibe-to-production-audit-kit/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](vibe_audit.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
