@@ -1,0 +1,27 @@
+{
+  "target": "./example-vibe-prototype",
+  "scanned_files": 18,
+  "score": 60,
+  "passed": false,
+  "finding_count": 2,
+  "findings": [
+    {
+      "rule_id": "VIBE-001",
+      "severity": "CRITICAL",
+      "category": "Client Secret Exposure",
+      "file": "src/lib/supabaseClient.ts",
+      "line": 4,
+      "description": "Server-only secret variable prefixed with public client bundle prefix.",
+      "remediation": "Move secret usage strictly to server actions/API routes and strip NEXT_PUBLIC_/VITE_ prefix."
+    },
+    {
+      "rule_id": "VIBE-003",
+      "severity": "HIGH",
+      "category": "Supabase RLS Bypass",
+      "file": "supabase/migrations/001.sql",
+      "line": 19,
+      "description": "SQL statement disables Row-Level Security or defines unrestricted write access.",
+      "remediation": "Enable RLS on every tenant table and scope policies with auth.uid() membership checks."
+    }
+  ]
+}
